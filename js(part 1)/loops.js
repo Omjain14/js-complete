@@ -1,31 +1,31 @@
 //repeating is loops.
 //three types-while,for,foreach-majorly
 
-for(start;end;change)
-for(let i=1;i<=100;i++){
-    console.log(i);
-}
+// for(start;end;change)
+// for(let i=1;i<=100;i++){
+//     console.log(i);
+// }
 
-start
-while(end){
-    //code
-    change
-}
-let i=1;
-while(i<=32){
-    console.log(i);
-    i++;
-}
+// start
+// while(end){
+//     //code
+//     change
+// }
+// let i=1;
+// while(i<=32){
+//     console.log(i);
+//     i++;
+// }
 
 //do-while-do will print once even if while condition not met.
-start
-do{//code 
-change}while(end)
-let i=1;
-do{
-    console.log(i2);
-    i2++
-}while(i<100);
+// start
+// do{//code 
+// change}while(end)
+// let i=1;
+// do{
+//     console.log(i2);
+//     i2++
+// }while(i<100);
 // break-stopping loop in between.
 for(let i=1;i<=50;i++){
     console.log(i);
@@ -76,7 +76,7 @@ while(i<=15){
 //Q5.Print multiplication table of 5(5*1=5....5*10=50)
 for(let i=1;i<=10;i++){
     console.log("5 * "+i+" = "+5*i);
-console.log(`5 * ${i} = ${5*i}`)this can also be done for dynamic values
+console.log(`5 * ${i} = ${5*i}`)//this can also be done for dynamic values
 }
 
 //Q6.Find sum of nos from 1 to 100 using loop.

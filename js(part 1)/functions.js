@@ -86,21 +86,21 @@ function abcd(){
 abcd();
 
 //IIFE(Immediately Invoked Function Expression): A function which is invoked immediately after its definition is called IIFE.
-(function(){
-    console.log("IIFE executed");
-})(); 
+// (function(){
+//     console.log("IIFE executed");
+// })(); 
 
 //difference between function declaration and function expression in terms of hoisting.
 //function declaration is hoisted means it can be called before its definition.
-functionDeclaration();
-function functionDeclaration(){
-    console.log("Function Declaration called");
-} 
+// functionDeclaration();
+// function functionDeclaration(){
+//     console.log("Function Declaration called");
+// } 
 //function expression is not hoisted means it cannot be called before its definition.
 // functionExpression(); //error
-let functionExpression=function(){
-    console.log("Function Expression called");
-}; 
+// let functionExpression=function(){
+//     console.log("Function Expression called");
+// }; 
  
 //practice questions:
 function getScore(...score){
@@ -110,4 +110,4 @@ function getScore(...score){
     });
     return total
 }
-console.log(getScore(10,20,30,40));
+// console.log(getScore(10,20,30,40));
