@@ -45,3 +45,36 @@ a.setAttribute("href", "https://www.google.com"); //sets the href attribute of t
 //removeAttribute()
 a.removeAttribute("href"); //removes the href attribute of the anchor tag
 
+//Dynamic Dom Manipulation:
+//createElement()
+let h4= document.createElement("h2");
+h4.textContent="Hi hello Namaste"; //creates a new h2 element
+console.log(h4);
+//appendChild()//puts the element at the end of the body
+//here we need to selct the body to append the h4 element
+document.querySelector("body").appendChild(h4);
+// document.body.appendChild(h4);
+//prepend()//puts the element at the beginning of the body
+document.body.prepend(h4);
+
+//remove()//removes the element
+// let h4 = document.querySelector("h2");
+// h4.remove();
+
+//Style updates via .style and .classList(adds/removes/toggles classes)
+
+//.style
+let h5 = document.querySelector("h1");
+h5.style.color = "goldenrod"; //changes the color of h1 to goldenrod
+h5.style.backgroundColor = "black"; //changes the background color of h1 to black
+h5.style.fontFamily = "Gilroy"; //changes the font family of h1 to Gilroy
+//.style only works for inline styles
+
+//.classList
+let h6 = document.querySelector("h1");
+h6.classList.add("active"); //adds the class active to h1
+// h6.classList.remove("active"); //removes the class active from h1
+// h6.classList.toggle("active"); //toggles the class active on h1
+
+let div=document.querySelector("div");
+div.classList.toggle("active"); //toggles the class active on div it means if the class is present it removes it and if not present it adds it.
