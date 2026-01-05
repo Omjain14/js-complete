@@ -45,4 +45,3 @@ a.setAttribute("href", "https://www.google.com"); //sets the href attribute of t
 //removeAttribute()
 a.removeAttribute("href"); //removes the href attribute of the anchor tag
 
-//
