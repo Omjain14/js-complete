@@ -78,3 +78,4 @@ h6.classList.add("active"); //adds the class active to h1
 
 let div=document.querySelector("div");
 div.classList.toggle("active"); //toggles the class active on div it means if the class is present it removes it and if not present it adds it.
+
