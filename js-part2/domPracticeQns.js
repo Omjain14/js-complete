@@ -5,4 +5,7 @@ heading.textContent ="Welcome to the DOM Practice Page";
 
 //Task 2: Select all <li> elrmrnts and print their text using a loop
 let listItems = document.querySelectorAll("li");
+listItems.forEach(function(item) {
+    console.log(item.textContent);
+});
  
