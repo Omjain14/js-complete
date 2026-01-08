@@ -8,4 +8,13 @@ let listItems = document.querySelectorAll("li");
 listItems.forEach(function(item) {
     console.log(item.textContent);
 });
- 
+
+let h2 = document.getElementById("dom");
+let btn= document.querySelector("#btn");
+
+btn.addEventListener("click",function(){
+    h2.textContent="Dom Is Easy";
+    btn.style.color="red";
+    btn.style.backgroundColor="black";
+});
+
