@@ -5,14 +5,14 @@
 let h1 = document.querySelector("h1");
 
 //Then add event listener and styling. 
-h1.addEventListener("click",function(){
-    h1.style.color = "red";
-})
+// h1.addEventListener("click",function(){
+//     h1.style.color = "red";
+// })
 
 //when doubleclick on elemnent use "dblclick" as an eventlistener
-h1.addEventListener("dblclick",function(){
-    h1.style.backgroundColor="black";
-})
+// h1.addEventListener("dblclick",function(){
+//     h1.style.backgroundColor="black";
+// })
 
 //removeEventListener:
 //Step1: select the elemnt
@@ -22,8 +22,8 @@ function dblclick() {
     p.style.color="gold";
 }
 //step 3:
-p.addEventListener("dblclick",dblclick);   
-p.removeEventListener("dblclick",dblclick); //removed eventListener.
+// p.addEventListener("dblclick",dblclick);   
+// p.removeEventListener("dblclick",dblclick); //removed eventListener.
 
 //common events
 //click:when we click once,action is performed
@@ -40,19 +40,30 @@ let inp = document.querySelector("input");
 //     console.log(details);
 // }) //Ok,by applying this we got details but even backspace is giving null in console we can see in inputEvent inside that data object we can see our letter so now direct we will make it print
 
-inp.addEventListener("input",function(details){
-    if(details.data !== null){
-    console.log(details.data);
-    }
-})
+// inp.addEventListener("input",function(details){
+//     if(details.data !== null){
+//     console.log(details.data);
+//     }
+// })
 
 //change event: whenver we see change in textarea or input select
 let select = document.querySelector("select");
 //If we want to change Select your device heading to selected after selecting device
-let h2 = document.querySelector("h2"); 
+// let h2 = document.querySelector("h2"); 
 
-select.addEventListener("change",function(dets){
-    console.log(dets.target.value);    //by doing console we got to know selcted value is in target so we do dets.target.value
-    h2.textContent = `${dets.target.value} Device Selected`;
-    
+// select.addEventListener("change",function(dets){
+//     console.log(dets.target.value);    //by doing console we got to know selcted value is in target so we do dets.target.value
+//     h2.textContent = `${dets.target.value} Device Selected`;
+// })
+
+//Submit:event
+let form=document.querySelector("form");
+let inputs = document.querySelectorAll("input");
+
+form.addEventListener("submit",function(dets){
+    dets.preventDefault();
+    console.log(inputs[0].value,
+        inputs[1].value,
+        inputs[2].value,
+        inputs[3].value);
 })
