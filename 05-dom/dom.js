@@ -5,8 +5,8 @@
 // A web page is a document. This document can be either displayed in the browser window or as the HTML source code of the page.
 
 //to get element by id:
-// let title = document.getElementById("title");
-// console.dir (title);
+let title = document.getElementById("title");
+console.dir (title);
 
 //to get element by class name:
 let title = document.getElementsByClassName("title");
@@ -53,13 +53,13 @@ console.log(h4);
 //appendChild()//puts the element at the end of the body
 //here we need to selct the body to append the h4 element
 document.querySelector("body").appendChild(h4);
-// document.body.appendChild(h4);
+document.body.appendChild(h4);
 //prepend()//puts the element at the beginning of the body
 document.body.prepend(h4);
 
 //remove()//removes the element
-// let h4 = document.querySelector("h2");
-// h4.remove();
+let h4 = document.querySelector("h2");
+h4.remove();
 
 //Style updates via .style and .classList(adds/removes/toggles classes)
 
@@ -73,8 +73,8 @@ h5.style.fontFamily = "Gilroy"; //changes the font family of h1 to Gilroy
 //.classList
 let h6 = document.querySelector("h1");
 h6.classList.add("active"); //adds the class active to h1
-// h6.classList.remove("active"); //removes the class active from h1
-// h6.classList.toggle("active"); //toggles the class active on h1
+h6.classList.remove("active"); //removes the class active from h1
+h6.classList.toggle("active"); //toggles the class active on h1
 
 let div=document.querySelector("div");
 div.classList.toggle("active"); //toggles the class active on div it means if the class is present it removes it and if not present it adds it.
