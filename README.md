@@ -7,7 +7,7 @@ I am covering the language topic by topic and building a strong foundation.
 - Core JavaScript concepts  
 - Arrays, strings and logic building  
 - DOM manipulation  
-- Events and basic form handling  
+- Events and basic form handling.
 
 ## Purpose
 I use this repo to track my progress and stay consistent while learning JavaScript.
