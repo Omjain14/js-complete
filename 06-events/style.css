@@ -25,6 +25,27 @@ input{
     background-color: #222;
     color:aqua;
 }
+.card{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #555;
+    border-radius: 10%;
+    padding: 20px;
+    margin-top: 20px;
+}
+.profilepic{
+    height:80px;
+    width:70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilepic img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
 /* input{
     display: none;
 } */
