@@ -57,42 +57,70 @@
 // })
 
 //Submit:event
-let form=document.querySelector("form");
-let inputs = document.querySelectorAll("input");
-let main = document.querySelector("#main");
+// let form=document.querySelector("form");
+// let inputs = document.querySelectorAll("input");
+// let main = document.querySelector("#main");
 
-form.addEventListener("submit",function(dets){
-    dets.preventDefault();
-    console.log(dets);
+// form.addEventListener("submit",function(dets){
+//     dets.preventDefault();
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+   
 
-    let profilepic = document.createElement("div");
+//     let card = document.createElement("div");
+//     card.classList.add("card");
 
-    let img = document.createElement("img");
-    img.setAttribute("src", inputs[0].value);
+//     // card.addEventListener("mouseover",function(){
+//     //     console.log("mousover");
+//     // })
 
-    let h3 = document.createElement("h3");
-    h3.textContent = inputs[1].value;
-    let h5 = document.createElement("h5");
-    h5.textContent = inputs[2].value;
-    let p = document.createElement("p");
-    p.textContent = inputs[3].value;
 
-    profilepic.appendChild(img);
-    card.appendChild(profilepic);
+//     let profilepic = document.createElement("div");
+//     profilepic.classList.add("profilepic");
 
-    card.appendChild(h3);
-    card.appendChild(h5);
-    card.appendChild(p);
+//     let img = document.createElement("img");
+//     img.setAttribute("src", inputs[0].value);
 
-    main.appendChild(card);
+//     let h3 = document.createElement("h3");
+//     h3.textContent = inputs[1].value;
+//     let h5 = document.createElement("h5");
+//     h5.textContent = inputs[2].value;
+//     let p = document.createElement("p");
+//     p.textContent = inputs[3].value;
 
-    inputs.forEach(function(inp){
-        if(inp.type !== "submit"){
-            inp.value ="";
-        }
-    })
+//     profilepic.appendChild(img);
+//     card.appendChild(profilepic);
+
+//     card.appendChild(h3);
+//     card.appendChild(h5);
+//     card.appendChild(p);
+
+//     main.appendChild(card);
+
+//     inputs.forEach(function(inp){
+//         if(inp.type !== "submit"){
+//             inp.value ="";
+//         }
+//     })
+
+// })
+
+//Mouseover:Means on which mouse comes
+let abcd = document.querySelector("#abcd");
+
+abcd.addEventListener("mouseover",function(){
+    abcd.style.backgroundColor = "yellow"
+})
+
+abcd.addEventListener("mouseout",function(){
+    abcd.style.backgroundColor = "red"
+})
+
+window.addEventListener("mousemove",function(dets){
+    let boxWidth = abcd.offsetWidth;
+    let boxHeight = abcd.offsetHeight;
+    //now boxwidth is actual box width and vice versa
+    //when we minus heightdivide by 2 and actualwidth by 2 we get mosuse cursor in center.
+    abcd.style.top = (dets.clientY - boxHeight/2) + "px";
+    abcd.style.left = (dets.clientX - boxWidth/2)+ "px";
 
 })
