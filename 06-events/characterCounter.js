@@ -1,12 +1,13 @@
-let input = document.querySelector("#inp1");
+let input = document.querySelector("#inp");
 let span = document.querySelector("span");
 
-input.addEventListener("input",function(e){
+
+inp.addEventListener("input",function(){
     let left = 20 - input.value.length;
     span.textContent = left;
-    
+
     if(left<0){
-        span.style.color = "red";
+        span.style.color="red";
     }else{
         span.style.color = "black";
     }
