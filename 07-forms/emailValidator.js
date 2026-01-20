@@ -13,6 +13,7 @@ form.addEventListener("submit",function(e){
     let emailAns = emailRegex.test(email.value.trim());
     let passAns = passRegex.test(password.value.trim());
     
+    if valid=true;
     if(!emailAns){
         emailError.style.display = "block";
     }else{
